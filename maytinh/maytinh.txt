@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bai_ve_toan_tu.js"></script>
+</head>
+<body>
+     <input type="text" id="number1"><input type="text" id="number2">
+     <button type="button" value="add" onclick="add()">+</button>
+     <button type="button" value="sub" onclick="sub()">-</button>
+     <button type="button" value="mul" onclick="mul()">x</button>
+     <button type="button" value="div" onclick="div()">/</button>
+</body>
+</html>
+
+
+function add() {
+   let number1 = parseInt(document.getElementById("number1").value);
+   let number2 = parseInt(document.getElementById("number1").value);
+   let ketqua = number1 + number2
+   document.write("k?t qu?: " + ketqua);
+}
+function sub() {
+   let number1 = parseInt(document.getElementById("number1").value);
+   let number2 = parseInt(document.getElementById("number2").value);
+   let ketqua1 = number1 - number2
+    document.write("k?t qu?: " + ketqua1);
+}
+function mul() {
+    let number1 = parseInt(document.getElementById("number1").value);
+    let number2 = parseInt(document.getElementById("number2").value);
+    let ketqua2 = number1 * number2
+     document.write("k?t qu?: " + ketqua2);
+}
+function div() {
+    let number1 = parseInt(document.getElementById("number1").value);
+    let number2 = parseInt(document.getElementById("number2").value);
+    let ketqua3 = number1 / number2
+      document.write("k?t qu?: " + ketqua3);
+}
+
